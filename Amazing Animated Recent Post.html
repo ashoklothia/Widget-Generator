@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>Animated Slider Featured Post Widget Generater by NBT</title>
+</head>
+<body>
+<script type='text/javascript'>
+;
+function NBTcodegen(){
+var NBTurl = document.getElementsByName("url")[0].value
+var NBTmp = document.getElementsByName("mp")[0].value
+var NBTspd = document.getElementsByName("spd")[0].value
+var NBTplay = document.getElementsByName("play")[0].value
+var widget=document.getElementsByName("widget.content")[0];
+widget.value += " <link rel=\"stylesheet\" type=\"text\/css\" href=\"https:\/\/dl.dropboxusercontent.com\/s\/2vjlzwj74ndavlm\/NBT_Animated_Recent_Slider.css\" \/> "; 
+widget.value += " <div id=\"featuredpostside\"><\/div><a href=\"http:\/\/www.newbloggertips.com\"><\/a> "; 
+widget.value += " <script src=\"http:\/\/code.jquery.com\/jquery-latest.js\"><\/script> "; 
+widget.value += " <script src=\"https:\/\/dl.dropboxusercontent.com\/s\/ws9ldvtsjerwg19\/NBT_Animated_Recent_Slider.js?\"><\/script> "; 
+widget.value += " <script type='text\/javascript'> "; 
+widget.value += " FeaturedPostSide({ "; 
+widget.value += " blogURL:\""+ NBTurl +"\", "; 
+widget.value += " MaxPost:"+ NBTmp +", "; 
+widget.value += " idcontaint:\"#featuredpostside\", "; 
+widget.value += " ImageSize:300, "; 
+widget.value += " interval:"+ NBTspd +", "; 
+widget.value += " autoplay:"+ NBTplay +", "; 
+widget.value += " tagName:false "; 
+widget.value += " }); "; 
+widget.value += " <\/script> ";
+
+
+
+document.getElementsByName("go")[0].disabled = false;
+          document.getElementsByName("preview")[0].disabled = false;
+        }
+
+function NBTpredemo(){
+var demodata = document.getElementsByName('NBTjs')[0].value + document.getElementsByName('widget.content')[0].value;
+newwindow = window.open('', 'name', '');
+var tmp = newwindow.document;
+tmp.write('' + demodata + '');
+tmp.close();
+}
+
+function NBTReset(){
+var widget=document.getElementsByName("url")[0].value="http://www.NewBloggerTips.com"
+var widget=document.getElementsByName("mp")[0].value="8"
+var widget=document.getElementsByName("spd")[0].value="6000"
+var widget=document.getElementsByName("play")[0].value="true"
+
+var widget=document.getElementsByName("widget.content")[0].value=""
+}
+</script>
+
+
+<div id="NBTgadmn">
+<fieldset class="redius" style="border: 2px solid #0066B3;">
+<legend class="redius" align="center" style="border: 0px solid #0066B3; padding: 
+5px 20px; margin-  left: 20px;"><center>Animated Slider Featured Post Widget Generater by NBT</center> </legend> 
+
+</br>
+
+<style>
+.input-text,.text-input, .select-box{
+ margin:0 2px;
+ padding:4px 6px;
+ border: 1px solid #0066B3;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+ border-radius: 4px;
+ font-family: gergia;
+ font-style: italic;
+ -webkit-box-shadow: 4px 4px 4px #BFE3FE;
+ -moz-box-shadow: 4px 4px 4px #BFE3FE;
+ box-shadow: 4px 4px 4px #BFE3FE;
+ font-size: 14px;
+ color: #666;
+ max-width:auto;
+}
+.textarea-box, .textareaBox{
+ border:1px solid #0066B3;
+ padding:6px;
+ -webkit-resize: none;
+ -moz-resize: none;
+ resize: none;
+ -webkit-box-shadow: 4px 4px 4px #dfdfdf;
+ -moz-box-shadow: 4px 4px 4px #dfdfdf;
+ box-shadow: 4px 4px 4px #dfdfdf;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+}
+
+
+.redius{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; }
+}
+#NBTgadform {
+	font-family: Georgia, serif;
+}
+
+#NBTgadmn fieldset {
+	border: 1px solid #004000;
+	background: #BFE3FE;
+	padding: 0 20px;
+}
+
+#NBTgadmn legend {
+	background: #0066B3;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+
+#NBTgad fieldset {
+	border: 1px solid #004000;
+	background: #FFFFFF;
+	padding: 0 20px;
+}
+#NBTgad legend {
+	background: #0066B3;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #cccccc;
+	border-bottom-color: #999999;
+	border-right-color: #999999;
+	padding: 4px 8px;
+}
+</style>
+
+
+<div id="NBTgad">
+<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 20px;">Customize</legend>
+<table width='100%'>
+<tr>
+<td width='40%'>Website URL</td>
+<td width='60%'>: <input class='input-text' type='text' id='NBT' name='url' value='http://www.NewBloggerTips.com' size='30'></td>
+</tr>
+
+<tr>
+<td width='40%'>Slide Post</td>
+<td width='60%'>: <input class='input-text' type='text' id='NBT' name='mp' value='8' size='5'></td>
+</tr>
+
+<tr>
+<td width='40%'>Slider Speed</td>
+<td width='60%'>: <input class='input-text' type='text' id='NBT' name='spd' value='6000' size='5'></td>
+</tr>
+
+<tr>
+<td width='40%'><label for='play'>Slider Auto Play</label></td>
+<td width='60%'>: <select class='select-box' id='play'  name='play'>
+<option value='true'>Yes</option>
+<option value='false'>No</option> 
+</select>
+</td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+</fieldset>
+<br/>
+<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 20px;">Application / Buttons</legend> </br>
+<center>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:115px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:NBTcodegen();'/>
+
+<input style="font-weight:bold;font-size: 16px; width: 115px;" type="button"disabled="disabled" name="preview" value="Preview" onclick="javascript:NBTpredemo();"/>
+
+<input value='Reset' style='font-size:16px;width:115px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:NBTReset();'/>
+
+<input name="go" value='Add to Blogger' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='submit' onclick='javascript:NBTcodegen();'/>
+
+</center>
+
+<textarea name="NBTjs" style="display: none; height: 0px; width: 0px;">
+          
+        </textarea>
+</fieldset>
+<br/>
+
+<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" 
+
+align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 
+
+20px;">Generated Code</legend>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style=' background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.NewBloggerTips.com/" />
+<input name="logoUrl" type="hidden" value="http://1.bp.blogspot.com/-TSILid05T5I/UMmzmLuRN-I/AAAAAAAAIVw/PS0yJpqgZ3E/s1600/NBT+LOGO+-+add+to+blogger.png" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2012 All Rights Reserved by <a href="https://plus.google.com/114850220168831844723">Ashu Insan</a> @ <a href="http://www.NewBloggerTips.com/">NewBloggerTips</a></small></center>
+</div></div>
+</fieldset>
+</fieldset>
+
+</body>
+</html>
